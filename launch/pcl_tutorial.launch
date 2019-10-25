@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="base_link_to_filtered_cloud" args="1 1 0 0.0 0.0 0.0 base_link filtered_cloud" />
+
+  <node pkg="pcl_tutorial" type="pcl_tutorial" name="pcl"  output="screen" />
+
+  <!-- <node pkg="pcl_ros" type="pcd_to_pointcloud" name="anyname" output="screen" /> -->
+  <node pkg="rviz" name="rviz" type="rviz" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</launch>
